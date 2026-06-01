@@ -64,7 +64,15 @@ header {
   background-color: black;
   position: relative;
   padding: 15px;
+  max-height: 50dvh;
+  overflow: hidden;
 }
+
+header img {
+  max-height: 40dvh;
+  align-items: center;
+}
+
 header h1,
 header h2 {
   position: absolute;
@@ -83,7 +91,7 @@ h2 {
 }
 
 .logo {
-  height: 48px;
+  max-height: 48px;
 }
 
 .content {
