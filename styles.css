@@ -260,7 +260,7 @@ input[type="date"]::-webkit-datetime-edit {
 }
 
 .register-btn {
-  margin-top: 20px;
+  margin-bottom: 80px;
   padding: 12px 18px;
   background: white;
   color: black;
@@ -272,4 +272,44 @@ input[type="date"]::-webkit-datetime-edit {
 
 .register-btn:hover {
   opacity: 0.8;
+}
+
+#gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+#gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.upload-btn {
+  background: #ff4ec7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-btn:hover {
+  background: #ff2fb7;
+  transform: scale(1.03);
 }

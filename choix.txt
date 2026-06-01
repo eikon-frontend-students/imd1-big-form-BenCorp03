@@ -1,0 +1,92 @@
+## Choix CSS 1 — Unités dynamiques (dvh)
+
+**Notion utilisée**
+Utilisation de l’unité dvh pour adapter la hauteur d’un élément à la taille réelle du viewport.
+
+**Où dans mon code** 
+dans header.
+
+**Extrait** 
+header {
+  max-height: 50dvh;
+}
+
+**Effet sur le rendu** 
+Le header ne dépasse jamais 50% de la hauteur de l’écran. 
+
+--------------------------------------------------------------
+
+## Choix CSS 2 — Box Model
+
+**Notion utilisée**
+ Utilisation du padding et du border-radius pour améliorer la lisibilité et la perception visuelle des éléments.
+
+**Où dans mon code**  
+dans la classe .login-box input.
+
+**Extrait** 
+.login-box input {
+  padding: 12px;
+  border-radius: 12px;
+}
+**Effet sur le rendu** 
+Le champ de formulaire devient plus confortable à utiliser, avec un espace intérieur suffisant et des coins arrondis qui adoucissent l’interface.
+
+--------------------------------------------------------------
+
+## Choix CSS 3 — Centrage avec Flexbox
+**Notion utilisée**
+Utilisation de display: flex, justify-content et align-items pour centrer un élément horizontalement et verticalement.
+
+**Où dans mon code** 
+Dans le footer.
+
+**Extrait** 
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+**Effet sur le rendu** 
+Le texte du footer est parfaitement centré dans les deux axes. C'est mon côté maniaque !
+
+--------------------------------------------------------------
+
+## Choix CSS 4 — Organisation verticale avec Flexbox
+
+**Notion utilisée**
+flex-direction: column pour organiser les éléments d’un formulaire verticalement avec un espacement uniforme.
+
+**Où dans mon code** 
+Dans la classe .login-box.
+
+**Extrait** 
+.login-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+**Effet sur le rendu** 
+Les champs du formulaire s’alignent naturellement les uns sous les autres et non pas les uns à côté des autres. 
+
+--------------------------------------------------------------
+
+## Choix CSS 5 — Alignement individuel avec align-self
+
+**Notion utilisée**
+Utilisation de la propriété align-self pour modifier l’alignement d’un seul élément dans un conteneur Flexbox.
+
+**Où dans mon code** 
+Dans la classe .forgot, à l’intérieur du formulaire .login-box qui utilise Flexbox.
+
+**Extrait** 
+.forgot {
+  align-self: flex-end;
+}
+
+**Effet sur le rendu** 
+align-self: flex-end permet de déplacer uniquement le lien “Forgot password?” vers la droite. Ca permet de le rendre plus visible et de ne pas le noyer dans le reste.
+

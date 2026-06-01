@@ -45,4 +45,4 @@ awardBtn.addEventListener("click", async () => {
   });
 
   window.location.href = "inscriptionsuccess.html";
-});
+}); //visuel sur la ville
