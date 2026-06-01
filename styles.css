@@ -70,13 +70,13 @@ header h2 {
   position: absolute;
   left: 15px;
 }
-header h1 {
+h1 {
   bottom: 26px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   font-size: 36px;
 }
-header h2 {
+h2 {
   bottom: 11px;
   color: #fff;
   font-size: 16px;
@@ -123,7 +123,6 @@ footer {
 
 .login-box input {
   padding: 12px;
-  border-radius: 6px;
   border: 1px solid #ccc;
   background: #f7f7f7;
   border-radius: 12px;
@@ -157,6 +156,11 @@ footer {
   font-weight: bold;
 }
 
+.login-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .signup {
   text-align: center;
   font-size: 14px;
@@ -178,19 +182,86 @@ footer {
 
 .successcontent {
   background-color: black;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.successcontent h1 {
-  color: black;
-  font-family: "Jockey One", sans-serif;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-  font-size: 36px;
+  align-items: center;
+  height: 80dvh;
 }
 
 .checkcircle {
-  max-width: 30px;
+  max-width: 40px;
+}
+
+.successmessage {
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.return-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  color: #757575;
+}
+
+.dashboardcontent {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80dvh;
+  position: relative;
+}
+
+.dashboardmessage {
+  color: white;
+  text-align: center;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  opacity: 0.8;
+}
+
+.register-btn {
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.register-btn:hover {
+  opacity: 0.8;
 }

@@ -33,44 +33,49 @@
  <div class="content">
     <form class="login-box">
           <h3>Personnal information</h3>
-      <label>Username</label>
-      <input type="text" placeholder="Chunkylover53" />
+      <label>First Name</label>
+      <input id="firstname" type="text" placeholder="Chunkylover53" required/>
       <label>Last Name</label>
-      <input type="text" placeholder="Simpson" />
+      <input id="lastname" type="text" placeholder="Simpson" required/>
       <label>Email</label>
-      <input type="email" placeholder="chunkylover53@aol.com" />
+      <input id="email" type="email" placeholder="chunkylover53@aol.com" required/>
+
       <label>Date of Birth</label>
-      <input type="date" placeholder="12/05/1956" />
+      <input id="dob" type="date" required/>
+
             <label>Address</Address></label>
-      <input type="text" placeholder="742 Evergreen Terrace" />
+      <input id="address" type="text" placeholder="742 Evergreen Terrace" required/>
             <label>ZIP</label>
-      <input type="number" placeholder="80085" />
+      <input id="zip" type="number" placeholder="80085" required/>
             <label>City</label>
-      <input type="text" placeholder="Springfield" />
+      <input id="city" type="text" placeholder="Springfield" required/>
 
       <h3>Access information</h3>
 
       <label>Username</label>
-                <input type="text" placeholder="Chunkylover53">
+                <input id="username" type="text" placeholder="Chunkylover53" required>
 
                 <label>Password</label>
-                <input type="password" placeholder="Password">
+                <input id="password" type="password" placeholder="Password" required>
                 <label>Confirm password</label>
-                <input type="password" placeholder="Confirm password">
+                <input id="confirm" type="password" placeholder="Confirm password" required>
 
                 <label class="terms">
-  <input type="checkbox" required />
-  <span>I have read and agree to the <a href="terms.html">Terms of Use</a></span>
-</label>
+                  <input id="terms" type="checkbox" required />
+                  <span>I have read and agree to the <a href="terms.html">Terms of Use</a></span>
+                </label>
 
-
-      <button type="submit" class="login-btn">Register</button>
+<button id="register-btn" type="submit" class="login-btn" disabled>
+  Register
+</button>
       <p class="signup">
                     Already have an account? <a href="index.html">Sign in</a>
                 </p>
     </form>
     </div>
 
+
     <footer>GOOD LUCK & HAVE FUN!</footer>
+    <script src="script.js"></script>
   </body>
 </html>
