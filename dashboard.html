@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="topbar">
+        <img
+          src="images/Capture d’écran 2026-04-20 à 16.49.56.png"
+          alt="logo"
+          class="logo"
+        />
+      </div>
+    </header>
+
+    <div class="dashboardcontent">
+      <button id="logout-btn" class="logout-btn">Logout</button>
+
+      <h1>Inscription</h1>
+
+      <p class="dashboardmessage">
+        Welcome back, <span id="current-user"></span>! Would you like to
+        register for the Photography Award 2026?
+      </p>
+
+      <button id="award-register-btn" class="register-btn">Register now</button>
+
+      <h1>Your gallery</h1>
+
+      <button id="upload-btn" class="upload-btn">Upload photos</button>
+      <input type="file" id="upload" accept="image/*" multiple hidden />
+
+      <div id="gallery"></div>
+    </div>
+
+    <footer>GOOD LUCK & HAVE FUN!</footer>
+
+    <script src="auth.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>

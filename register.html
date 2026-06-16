@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <img
+          src="images/Capture d’écran 2026-04-20 à 16.49.56.png"
+          alt="logo"
+          class="logo"
+        />
+      </div>
+      <img
+        src="images/tookapic-camera-932267_1920.jpg"
+        alt="Camera"
+        class="camera"
+      />
+      <h1>INSCRIPTION</h1>
+      <h2>CREATE YOUR PROFILE</h2>
+    </header>
+
+ <div class="content">
+    <form class="login-box">
+          <h3>Personnal information</h3>
+      <label>First Name</label>
+      <input id="firstname" type="text" placeholder="Chunkylover53" required/>
+      <label>Last Name</label>
+      <input id="lastname" type="text" placeholder="Simpson" required/>
+      <label>Email</label>
+      <input id="email" type="email" placeholder="chunkylover53@aol.com" required/>
+
+      <label>Date of Birth</label>
+      <input id="dob" type="date" required/>
+
+            <label>Address</Address></label>
+      <input id="address" type="text" placeholder="742 Evergreen Terrace" required/>
+            <label>ZIP</label>
+      <input id="zip" type="number" placeholder="80085" required/>
+            <label>City</label>
+      <input id="city" type="text" placeholder="Springfield" required/>
+
+      <h3>Access information</h3>
+
+      <label>Username</label>
+                <input id="username" type="text" placeholder="Chunkylover53" required>
+
+                <label>Password</label>
+                <input id="password" type="password" placeholder="Password" required>
+                <label>Confirm password</label>
+                <input id="confirm" type="password" placeholder="Confirm password" required>
+
+                <label class="terms">
+                  <input id="terms" type="checkbox" required />
+                  <span>I have read and agree to the <a href="terms.html">Terms of Use</a></span>
+                </label>
+
+<button id="register-btn" type="submit" class="login-btn" disabled>
+  Register
+</button>
+      <p class="signup">
+                    Already have an account? <a href="index.html">Sign in</a>
+                </p>
+    </form>
+    </div>
+
+
+    <footer>GOOD LUCK & HAVE FUN!</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

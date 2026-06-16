@@ -1,0 +1,315 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", sans-serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+header {
+  font-family: "Jockey One", sans-serif;
+  background-color: black;
+  position: relative;
+  padding: 15px;
+  max-height: 50dvh;
+  overflow: hidden;
+}
+
+header img {
+  max-height: 40dvh;
+  align-items: center;
+}
+
+header h1,
+header h2 {
+  position: absolute;
+  left: 15px;
+}
+h1 {
+  bottom: 26px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  font-size: 36px;
+}
+h2 {
+  bottom: 11px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.logo {
+  max-height: 48px;
+}
+
+.content {
+  padding: 25px;
+  text-align: justify;
+}
+h3 {
+  padding: 20px 0;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15dvh;
+  color: #fff;
+  font-family: "Jockey One", sans-serif;
+}
+.description {
+  padding: 5px 0;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.login-box label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.login-box input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  border-radius: 12px;
+  background: var(
+    --Recessed,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
+    rgba(208, 208, 208, 0.5)
+  );
+  background-blend-mode: luminosity, color-burn;
+  box-shadow:
+    0 -0.5px 1px 0 rgba(255, 255, 255, 0.3) inset,
+    0 -0.5px 1px 0 rgba(255, 255, 255, 0.25) inset,
+    1px 1.5px 4px 0 rgba(0, 0, 0, 0.08) inset,
+    1px 1.5px 4px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+.forgot {
+  font-size: 12px;
+  color: black;
+  align-self: flex-end;
+  margin-top: -5px;
+}
+
+.login-btn {
+  margin-top: 10px;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.login-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.signup {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.signup a {
+  color: black;
+}
+
+.terms {
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.terms a {
+  color: black;
+}
+
+.successcontent {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80dvh;
+}
+
+.checkcircle {
+  max-width: 40px;
+}
+
+.successmessage {
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.return-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  color: #757575;
+}
+
+.dashboardcontent {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80dvh;
+  position: relative;
+}
+
+.dashboardmessage {
+  color: white;
+  text-align: center;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  opacity: 0.8;
+}
+
+.register-btn {
+  margin-bottom: 80px;
+  padding: 12px 18px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.register-btn:hover {
+  opacity: 0.8;
+}
+
+#gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+#gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.upload-btn {
+  background: #ff4ec7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-btn:hover {
+  background: #ff2fb7;
+  transform: scale(1.03);
+}
